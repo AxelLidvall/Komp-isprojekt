@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="648.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <AnchorPane layoutX="-18.0" layoutY="-3.0" prefHeight="651.0" prefWidth="797.0">
+         <children>
+            <Label fx:id="lblFirstName" layoutX="82.0" layoutY="171.0" text="First name " />
+            <Label fx:id="lblLastName" layoutX="84.0" layoutY="240.0" text="Last name" />
+            <Label fx:id="lblStudent" layoutX="84.0" layoutY="71.0" text="Student">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAreaStudent" layoutX="405.0" layoutY="166.0" prefHeight="268.0" prefWidth="336.0" />
+            <TextField fx:id="txtFirstName" layoutX="162.0" layoutY="166.0" promptText="Enter first name" />
+            <TextField fx:id="txtLastName" layoutX="162.0" layoutY="235.0" promptText="Enter last name" />
+            <Button layoutX="143.0" layoutY="413.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="27.0" prefWidth="161.0" text="Add" />
+            <Button layoutX="143.0" layoutY="521.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="27.0" prefWidth="161.0" text="Delete" />
+            <Button layoutX="143.0" layoutY="576.0" mnemonicParsing="false" onAction="#btnRead" prefHeight="27.0" prefWidth="161.0" text="Read " />
+            <Label fx:id="lblResponse" layoutX="405.0" layoutY="450.0" text="Response:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <TextField fx:id="txtStudentId" layoutX="162.0" layoutY="300.0" promptText="Enter student ID" />
+            <Label fx:id="lblStudentId" layoutX="84.0" layoutY="305.0" text="Student ID" />
+            <Label fx:id="lblRegStudents" layoutX="410.0" layoutY="134.0" text="Registered students">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button layoutX="143.0" layoutY="467.0" mnemonicParsing="false" onAction="#btnSaveUpdate" prefHeight="27.0" prefWidth="161.0" text="Save update" />
+            <TextArea fx:id="txtAreaResponse" layoutX="405.0" layoutY="483.0" prefHeight="118.0" prefWidth="336.0" />
+            <Label fx:id="lblFeedback" layoutX="85.0" layoutY="355.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
